@@ -1,0 +1,92 @@
+<%= form_with(model: patient) do |form| %>
+  <% if patient.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+        <% patient.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :phone_number, style: "display: block" %>
+    <%= form.number_field :phone_number %>
+  </div>
+
+  <div>
+    <%= form.label :abha_number, style: "display: block" %>
+    <%= form.text_field :abha_number %>
+  </div>
+
+  <div>
+    <%= form.label :abha_id, style: "display: block" %>
+    <%= form.text_field :abha_id %>
+  </div>
+
+  <div>
+    <%= form.label :abha_phone_number, style: "display: block" %>
+    <%= form.number_field :abha_phone_number %>
+  </div>
+
+  <div>
+    <%= form.label :aadhar_number, style: "display: block" %>
+    <%= form.text_field :aadhar_number %>
+  </div>
+
+  <div>
+    <%= form.label :aadhar_phone_number, style: "display: block" %>
+    <%= form.number_field :aadhar_phone_number %>
+  </div>
+
+  <div>
+    <%= form.label :abha_consent, style: "display: block" %>
+    <%= form.text_field :abha_consent %>
+  </div>
+
+  <div>
+    <%= form.label :abha_otp, style: "display: block" %>
+    <%= form.text_field :abha_otp %>
+  </div>
+
+  <div>
+    <%= form.label :aadhar_otp, style: "display: block" %>
+    <%= form.text_field :aadhar_otp %>
+  </div>
+
+  <div>
+    <%= form.label :abha_phone_verified, style: "display: block" %>
+    <%= form.text_field :abha_phone_verified %>
+  </div>
+
+  <div>
+    <%= form.label :aadhar_phone_verified, style: "display: block" %>
+    <%= form.text_field :aadhar_phone_verified %>
+  </div>
+
+  <div>
+    <%= form.label :abha_verified, style: "display: block" %>
+    <%= form.text_field :abha_verified %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

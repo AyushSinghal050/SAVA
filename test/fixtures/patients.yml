@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: 1
+  abha_number: MyString
+  abha_id: MyString
+  abha_phone_number: 1
+  aadhar_number: MyString
+  aadhar_phone_number: 1
+  abha_consent: MyString
+  abha_otp: MyString
+  aadhar_otp: MyString
+  abha_phone_verified: MyString
+  aadhar_phone_verified: MyString
+  abha_verified: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: 1
+  abha_number: MyString
+  abha_id: MyString
+  abha_phone_number: 1
+  aadhar_number: MyString
+  aadhar_phone_number: 1
+  abha_consent: MyString
+  abha_otp: MyString
+  aadhar_otp: MyString
+  abha_phone_verified: MyString
+  aadhar_phone_verified: MyString
+  abha_verified: MyString
